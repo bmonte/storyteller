@@ -1,0 +1,23 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  padding: 0;
+
+  background-color: #103b8e;
+  border-radius: 50%;
+
+  color: var(--white);
+}
+
+.avatar__img {
+  border-radius: 50%;
+}
+
+.avatar__text {
+  margin: 0;
+}

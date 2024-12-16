@@ -1,0 +1,26 @@
+.tag {
+  padding: 0.25rem 0.5rem;
+
+  border-radius: 3px;
+
+  color: var(--white);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.tag--draft {
+  background-color: var(--primary-main);
+}
+
+.tag--scheduled {
+  background-color: var(--primary-main);
+}
+
+.tag--live {
+  background-color: var(--success-main);
+}
+
+.tag--past {
+  background-color: var(--secondary-main);
+}

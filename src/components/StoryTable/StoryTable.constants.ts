@@ -1,0 +1,51 @@
+export const TABLE_HEADER = [
+  {
+    title: 'Title',
+    dataKey: 'title',
+    sortable: true,
+    width: 28,
+    align: 'left',
+  },
+  {
+    title: 'Pages',
+    dataKey: 'pages',
+    sortable: false,
+    width: 22,
+    align: 'left',
+  },
+  {
+    title: 'Last Modified',
+    dataKey: 'last_modified',
+    sortable: true,
+    width: 10,
+    align: 'left',
+  },
+  {
+    title: 'Status',
+    dataKey: 'status',
+    sortable: true,
+    width: 9,
+    align: 'center',
+  },
+  {
+    title: 'Live From',
+    dataKey: 'live_date',
+    sortable: true,
+    width: 10,
+    align: 'left',
+  },
+  {
+    title: 'Ends',
+    dataKey: 'end_date',
+    sortable: true,
+    width: 10,
+    align: 'left',
+  },
+  {
+    title: '',
+    dataKey: '',
+    sortable: false,
+    width: 10,
+    align: 'center',
+  },
+];

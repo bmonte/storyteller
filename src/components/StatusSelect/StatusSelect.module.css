@@ -1,0 +1,24 @@
+.select {
+  height: 36px;
+  min-width: 160px;
+
+  padding: 0.25rem;
+
+  font-size: 0.875rem;
+  font-family: var(--font-euclid-circular) sans-serif;
+
+  background-color: var(--white);
+
+  border: 1px solid #BBBCC2;
+  border-radius: 4px;
+
+  color: var(--primary-dark);
+
+  outline-color: var(--primary-main);
+
+  cursor: pointer;
+
+  &:hover {
+    border-color: (--primary-main);
+  }
+}

@@ -1,0 +1,51 @@
+.input__container {
+  display: flex;
+  align-items: center;
+
+  height: 34.4px;
+
+  padding-left: 0.5rem;
+
+  background-color: var(--white);
+  
+  border: 1px solid #bbbcc2;
+  border-radius: 4px;
+
+  font-family: var(--font-euclid-circular) sans-serif;
+
+  > input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 0.5rem;
+
+    border: 0;
+    outline: none;
+
+    font-size: 0.875rem;
+  }
+
+  &:hover {
+    border-color: (--primary-main);
+  }
+}
+
+.input__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 36px;
+    height: 100%;
+  
+    background-color: #D3D4D9;
+  
+    border: none;
+    border-radius: inherit;
+    outline: 0;
+  
+    &:disabled {
+      cursor: not-allowed;
+    }  
+}
+
