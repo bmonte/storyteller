@@ -17,7 +17,7 @@
 }
 
 .table__container {
-  max-height: 500px;
+  max-height: calc(100vh - 260px);
 
   overflow-x: scroll;
 

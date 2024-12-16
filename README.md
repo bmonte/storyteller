@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="left" style="position: relative;">
+<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="right" width="15%" style="margin: 10px 0 0 10px;">
+<h1>Storyteller Dashboard</h1>
+<p align="left">
+	<img src="https://img.shields.io/github/last-commit/bmonte/storyteller?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/bmonte/storyteller?style=default&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/bmonte/storyteller?style=default&color=0080ff" alt="repo-language-count">
+</p>
+<p align="left"><!-- default option, no dependency badges. -->
+</p>
+<p align="left">
+	<!-- default option, no dependency badges. -->
+</p>
+</div>
+<br clear="right">
 
-## Getting Started
+## 🔗 Table of Contents
 
-First, run the development server:
+- [📍 Overview](#-overview)
+- [📁 Project Structure](#-project-structure)
+- [🚀 Getting Started](#-getting-started)
+  - [☑️ Prerequisites](#-prerequisites)
+  - [⚙️ Installation](#-installation)
+  - [🤖 Usage](#🤖-usage)
+  - [🧪 Testing](#🧪-testing)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📍 Overview
+
+This project is a web-based dashboard built using Next.js, Zustand, Axios, and React. The application serves as an intuitive platform for content managers to view, organize, and update stories in a centralized interface.
+
+- Next.js provides server-side rendering (SSR) for fast page loads and SEO optimization, ensuring a smooth and scalable user experience.
+- Zustand is used for state management, offering a simple yet powerful way to store and manage the application’s state, particularly the data related to stories, without prop-drilling or complex context setups.
+- Axios handles all HTTP requests, allowing the app to communicate efficiently with the backend API to fetch, create, update, and delete story data in real time.
+- React is the core of the user interface, enabling a dynamic and interactive dashboard where users can filter, sort, and view detailed story information
+
+---
+
+## 📁 Project Structure
+
+```sh
+└── storyteller/
+    ├── README.md
+    ├── commitlint.config.js
+    ├── next.config.ts
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   └── logo.svg
+    ├── src
+    │   ├── app
+    │   ├── assets
+    │   ├── components
+    │   ├── constants
+    │   ├── hooks
+    │   ├── libs
+    │   ├── mocks
+    │   ├── models
+    │   ├── service
+    │   ├── store
+    │   └── utils
+    ├── tsconfig.json
+    └── vitest.config.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ☑️ Prerequisites
 
-## Learn More
+Before getting started with storyteller, ensure your runtime environment meets the following requirements:
 
-To learn more about Next.js, take a look at the following resources:
+- **Programming Language:** TypeScript
+- **Package Manager:** Npm
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### ⚙️ Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Install storyteller using one of the following methods:
 
-## Deploy on Vercel
+**Build from source:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the storyteller repository:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```sh
+❯ git clone git@github.com:bmonte/storyteller.git
+```
+
+2. Navigate to the project directory:
+
+```sh
+❯ cd storyteller
+```
+
+3. Change the Node version with NVM's help:
+
+```sh
+❯ nvm use
+```
+
+4. Install the project dependencies:
+
+**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
+
+```sh
+❯ npm install
+```
+
+### 🤖 Usage
+
+Run storyteller using the following command:
+**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
+
+```sh
+❯ npm run dev
+```
+
+### 🧪 Testing
+
+Run the test suite using the following command:
+**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
+
+```sh
+❯ npm run test
+```
+
+---

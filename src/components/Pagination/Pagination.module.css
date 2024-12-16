@@ -5,6 +5,8 @@
 
   height: 40px;
   width: 340px;
+  
+  margin-top: 0.5rem;
 }
 
 .pagination__list {

@@ -1,20 +1,23 @@
 import Image from 'next/image';
 
+import { MEDIA_QUERY } from '@/constants/media-query';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { Story } from '@/models/stories';
 
 import styles from './ImageGroup.module.css';
-
-const MAX_PAGES = 6;
 
 type ImageGroupProps = {
   pages: Story['pages'];
 };
 
 export function ImageGroup({ pages }: ImageGroupProps) {
+  const isMobile = useMediaQuery(MEDIA_QUERY.mobile);
+
+  const maxPages = isMobile ? 4 : 6;
   const totalPages = pages.length;
 
   function renderCounter() {
-    const rest = totalPages - MAX_PAGES;
+    const rest = totalPages - maxPages;
 
     return (
       <div className={styles.images__counter}>
@@ -29,7 +32,7 @@ export function ImageGroup({ pages }: ImageGroupProps) {
 
   return (
     <section className={styles.images__container}>
-      {[...pages].slice(0, MAX_PAGES).map((page, index) => (
+      {[...pages].slice(0, maxPages).map((page, index) => (
         <Image
           key={page.download_url}
           src={page.download_url}
